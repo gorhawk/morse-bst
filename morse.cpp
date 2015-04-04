@@ -55,24 +55,24 @@ void Dictionary::build(std::istream& in) {
  * (justifiable backtracking, it is)
  */
 bool Dictionary::search(DictionaryNode* node, char c, std::string &code) {
-    if (node == NULL) return false;
-    if (node->c == c) return true;
+	if (node == NULL) return false;
+	if (node->c == c) return true;
 	// guess for 'dot direction'
 	code.push_back('.');
-    if (search(node->dot, c, code)) {
+	if (search(node->dot, c, code)) {
 		return true; // match
-    } else {
+	} else {
 		code.erase(code.length()-1); // pop_back
-    }
+	}
 	// guess for 'dash direction'
 	code.push_back('-');
-    if (search(node->dash, c, code)) {
-        return 1;
-    } else {
+	if (search(node->dash, c, code)) {
+		return 1;
+	} else {
 		code.erase(code.length()-1); // pop_back
 	}
 	// no match in either direction
-    return false;
+	return false;
 }
 
 /**
