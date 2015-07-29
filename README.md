@@ -14,7 +14,7 @@ Options:
                     Default behavior.
     -d, --decode    Decodes INFILE into OUTFILE.
     -o, --output    Accept one filename as OUTFILE, read from standard input.
-                    Normally, if OUTFILE is omitted, the program writes to standard output.
+                    If OUTFILE is omitted, the program writes to standard output.
     -s, --standard  Use the ITU standardized, International Morse Code.
                     With this option, DICTIONARY is not needed.
     -h, --help      Display this help and exit.
