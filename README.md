@@ -1,4 +1,4 @@
-###morse-bst
+### morse-bst
 
 This small project includes a Morse dictionary module, and a sample command-line program using it.
 
