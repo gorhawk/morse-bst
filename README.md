@@ -2,7 +2,7 @@
 
 This small project includes a Morse dictionary module, and a sample command-line program using it.
 
-The dictionary is implemented using a binary search tree. The tree is built from an input stream containing arbitrary character-codeword combinations. The input is line oriented and should be organized as follows: `A .-` (single one byte character followed by a space and the binary codeword for the character and a newline)
+The dictionary is implemented using a prefix tree. The tree is built from an input stream containing arbitrary character-codeword combinations. The input is line oriented and should be organized as follows: `A .-` (single one byte character followed by a space and the binary codeword for the character and a newline)
 
 The sample program provides a way to use the international standard for convenience.
 The `--help` output:
